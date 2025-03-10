@@ -217,6 +217,22 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: TransferPageUserV3CopyWidget.routeName,
           path: TransferPageUserV3CopyWidget.routePath,
           builder: (context, params) => TransferPageUserV3CopyWidget(),
+        ),
+        FFRoute(
+          name: ForgotPasswordWidget.routeName,
+          path: ForgotPasswordWidget.routePath,
+          builder: (context, params) => ForgotPasswordWidget(),
+        ),
+        FFRoute(
+          name: ForgotPasswordCreateNewPasswordWidget.routeName,
+          path: ForgotPasswordCreateNewPasswordWidget.routePath,
+          builder: (context, params) => ForgotPasswordCreateNewPasswordWidget(),
+        ),
+        FFRoute(
+          name: ForgotPasswordConfirmNewPasswordWidget.routeName,
+          path: ForgotPasswordConfirmNewPasswordWidget.routePath,
+          builder: (context, params) =>
+              ForgotPasswordConfirmNewPasswordWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

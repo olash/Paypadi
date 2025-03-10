@@ -47,3 +47,9 @@ export '/driver_app/transfer_page_user_v2_copy/transfer_page_user_v2_copy_widget
     show TransferPageUserV2CopyWidget;
 export '/driver_app/transfer_page_user_v3_copy/transfer_page_user_v3_copy_widget.dart'
     show TransferPageUserV3CopyWidget;
+export '/general/forgot_password/forgot_password_widget.dart'
+    show ForgotPasswordWidget;
+export '/general/forgot_password_create_new_password/forgot_password_create_new_password_widget.dart'
+    show ForgotPasswordCreateNewPasswordWidget;
+export '/general/forgot_password_confirm_new_password/forgot_password_confirm_new_password_widget.dart'
+    show ForgotPasswordConfirmNewPasswordWidget;
