@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 
 import '/auth/base_auth_user_provider.dart';
 
+import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
 import '/index.dart';
@@ -418,10 +419,14 @@ class FFRoute {
               : builder(context, ffParams);
           final child = appStateNotifier.loading
               ? Container(
-                  color: Colors.transparent,
-                  child: Image.asset(
-                    'assets/images/Paypadi_Logo_White_Background.jpg',
-                    fit: BoxFit.contain,
+                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                  child: Center(
+                    child: Image.asset(
+                      'assets/images/Paypadi_Logo_White_Background.jpg',
+                      width: 235.0,
+                      height: 235.0,
+                      fit: BoxFit.contain,
+                    ),
                   ),
                 )
               : page;
